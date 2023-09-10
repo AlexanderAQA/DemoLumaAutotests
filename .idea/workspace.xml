@@ -4,58 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/VeniceRadioAutotests/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/16fb917c-d099-4e4e-840f-be13ca109a04-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/2a2dcdc9-e024-41ce-97c2-520952545ddb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/2f2f679a-9820-4e29-a16c-7e32aa474a26-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/3f38a313-547f-47d7-8099-36ebac462edb-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/462685b3-84bd-4c9b-a3e3-10847d062ebd-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/47f284f8-b91c-49d4-82b9-5fa01b5e28b2-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/49f38071-ed1e-4f6f-97aa-6ff221db8f1a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/52573f88-bfd7-4b63-b159-2bec15d351a0-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/5fcb5e38-b7e4-4ddc-a87e-0d722c1e35ec-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/7d171b4e-af5f-412a-9680-4d66f717aa0c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/9bfd8c5b-82a3-489a-affa-06bb9f4586f1-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/allure.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/b332a90e-a369-4595-923e-ab76d1e73c68-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/b57a36e0-dfd2-4838-ad1e-e2ef4abd3ee4-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/b812e248-447d-4e84-a71f-4c3b6c72fe20-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/b89e5780-c231-49c9-bdc1-c067acff14e7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/ba919144-17cd-4e2a-941b-e6011cdc4ba5-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/bd4d5852-88bf-450e-a7e9-90f813c2ae94-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/c0f972c1-6154-4da9-8ed2-8719294cffd2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/c29b0bf5-c920-43c7-ae5b-f4d124bc5e6d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/c9f47a08-b5f6-42c4-b164-e21d408261e5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/cb688d50-94aa-4334-880d-50319d51c824-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/cbff885b-a6d8-45cb-a67d-b180bee92de2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/cd925feb-6f5f-4a15-8c58-817bc204f800-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/d65dbaf7-f925-4383-82b2-2e3a6899b49a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/e697511c-f4c1-44ca-b399-9a0962178397-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/e724a524-1365-4b26-83fd-5c0b809b4b93-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/e7cde79b-c14d-47f6-8c93-1963e725731f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/executor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/f30cc6f0-3fcf-47a8-ab8b-6b4f1f86b649-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/allure-results/fc91971b-613d-4e14-810f-33ea53e14916-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/PageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/helpers/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/helpers/TestConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractLocators.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/pages/home/HomeLocators.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/classes/com/softwaretestingboard/magento/app/pages/home/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/surefire-reports/2023-09-11T00-28-08_307.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/surefire-reports/TEST-app.autotests.home.TestHomePage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/surefire-reports/app.autotests.home.TestHomePage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/test-classes/allure.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/test-classes/app/autotests/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/test-classes/app/autotests/home/TestHomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/VeniceRadioAutotests/target/test-classes/logback.xml" beforeDir="false" />
+    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Add files via upload">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +13,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="AlexanderAQA &lt;144631576+alexanderaqa@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -76,6 +37,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2VDxpAhiZBgKVrQne3kXCHz0NCH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
@@ -98,6 +60,51 @@
       <option name="presentableId" value="Default" />
       <updated>1694384632924</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add files via upload">
+      <created>1694384839269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694384839270</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add files via upload">
+      <created>1694384937471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694384937471</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add files via upload">
+      <created>1694384972453</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694384972453</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add files via upload">
+      <created>1694385106375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694385106375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Up" />
+    <MESSAGE value="Add files via upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload" />
   </component>
 </project>
