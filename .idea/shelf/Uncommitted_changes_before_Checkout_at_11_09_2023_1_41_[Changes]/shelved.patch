@@ -1,0 +1,82 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b715fc5f-f4f6-468a-9825-c6ec2009b69f\" name=\"Changes\" comment=\"Add files via upload\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"AlexanderAQA &lt;144631576+alexanderaqa@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2VDxpAhiZBgKVrQne3kXCHz0NCH\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.0\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b715fc5f-f4f6-468a-9825-c6ec2009b69f\" name=\"Changes\" comment=\"\" />\r\n      <created>1694384632924</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1694384632924</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Add files via upload\">\r\n      <created>1694384839269</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694384839270</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add files via upload\">\r\n      <created>1694384937471</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694384937471</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Add files via upload\">\r\n      <created>1694384972453</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694384972453</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Add files via upload\">\r\n      <created>1694385106375</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694385106375</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Up\" />\r\n    <MESSAGE value=\"Add files via upload\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add files via upload\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 74b4eeffa34b95c036219326781163ddf0e9c80e)
++++ b/.idea/workspace.xml	(date 1694385526168)
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Add files via upload">
++    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Added develop branch">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -48,9 +48,35 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "project.structure.last.edited": "Project",
+     "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.0"
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "preferences.pluginManager"
+   }
+ }]]></component>
++  <component name="RunManager">
++    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
++      <MavenSettings>
++        <option name="myGeneralSettings" />
++        <option name="myRunnerSettings" />
++        <option name="myRunnerParameters">
++          <MavenRunnerParameters>
++            <option name="profiles">
++              <set />
++            </option>
++            <option name="goals">
++              <list />
++            </option>
++            <option name="pomFileName" />
++            <option name="profilesMap">
++              <map />
++            </option>
++            <option name="resolveToWorkspace" value="false" />
++            <option name="workingDirPath" value="" />
++          </MavenRunnerParameters>
++        </option>
++      </MavenSettings>
++      <method v="2" />
++    </configuration>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -88,7 +114,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1694385106375</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Added develop branch">
++      <created>1694385208522</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1694385208522</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -105,6 +138,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Up" />
+     <MESSAGE value="Add files via upload" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Add files via upload" />
++    <MESSAGE value="Added develop branch" />
++    <option name="LAST_COMMIT_MESSAGE" value="Added develop branch" />
+   </component>
+ </project>
+\ No newline at end of file
