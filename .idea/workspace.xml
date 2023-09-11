@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Added develop branch">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/users/users.csv" afterDir="false" />
+    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Added a few features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractLocators.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomeLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomeLocators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/app/autotests/home/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/autotests/home/TestHomePage.java" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestHomePage">
+  <component name="RunManager" selected="JUnit.TestHomePage.signUp">
     <configuration name="TestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoLumaAutotests" />
       <extension name="coverage">
@@ -84,6 +84,54 @@
       <option name="PACKAGE_NAME" value="app.autotests.home" />
       <option name="MAIN_CLASS_NAME" value="app.autotests.home.TestHomePage" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage.signIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoLumaAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.autotests.home.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.autotests.home" />
+      <option name="MAIN_CLASS_NAME" value="app.autotests.home.TestHomePage" />
+      <option name="METHOD_NAME" value="signIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage.signUp (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoLumaAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.autotests.home.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.autotests.home" />
+      <option name="MAIN_CLASS_NAME" value="app.autotests.home.TestHomePage" />
+      <option name="METHOD_NAME" value="signUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage.signUp (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoLumaAutotests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.autotests.home.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.autotests.home" />
+      <option name="MAIN_CLASS_NAME" value="app.autotests.home.TestHomePage" />
+      <option name="METHOD_NAME" value="signUp(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,8 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestHomePage" />
         <item itemvalue="JUnit.TestHomePage.signUp" />
+        <item itemvalue="JUnit.TestHomePage.signUp (2)" />
+        <item itemvalue="JUnit.TestHomePage.signUp (1)" />
+        <item itemvalue="JUnit.TestHomePage.signIn" />
+        <item itemvalue="JUnit.TestHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694423068915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added a few features">
+      <created>1694431523581</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694431523581</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +249,7 @@
     <MESSAGE value="Up" />
     <MESSAGE value="Add files via upload" />
     <MESSAGE value="Added develop branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added develop branch" />
+    <MESSAGE value="Added a few features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a few features" />
   </component>
 </project>
