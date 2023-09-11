@@ -60,7 +60,7 @@ public class TestHomePage extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Sign up")
     public void signUp() {
-        // Generate a random firstname using a library or method
+        // Generate a random firstname
         String firstname = app.homePage.generateRandomName();
         String lastname = app.homePage.generateRandomName();
         String email = app.homePage.generateRandomEmail();
@@ -68,10 +68,12 @@ public class TestHomePage extends BaseTest {
         // Click create an account
         app.homePage.clickButtonAbstractPage("sign up");
 
-        // Fill required fields with the generated firstname
+        // Fill required fields with the generated data
         HomeLocators.FIELD_FIRSTNAME.getElement().setValue(firstname);
         HomeLocators.FIELD_LASTNAME.getElement().setValue(lastname);
         HomeLocators.FIELD_EMAIL_ADRESS.getElement().setValue(email);
+
+        // Fill password fields
         HomeLocators.FIELD_PASSWORD.getElement().setValue("Qqwe123Snd123");
         HomeLocators.FIELD_PASSWORD_CONFIRM.getElement().setValue("Qqwe123Snd123");
 
@@ -79,7 +81,7 @@ public class TestHomePage extends BaseTest {
         HomeLocators.BUTTON_CREATE_AN_ACCOUNT.getElement().click();
         Driver.wait(2000);
 
-        // Checking if user registered successfully
+        // Checking if user registered successfully and authorized
         app.homePage.checkIfUserAuthorized(firstname);
         app.homePage.checkIfUserRegistrated();
     }

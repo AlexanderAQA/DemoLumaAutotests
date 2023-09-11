@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Added a few features">
+    <list default="true" id="b715fc5f-f4f6-468a-9825-c6ec2009b69f" name="Changes" comment="Added a new test for TestHomePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractLocators.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/abstractpage/AbstractPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomeLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomeLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/softwaretestingboard/magento/app/pages/home/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/app/autotests/home/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/autotests/home/TestHomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694431523581</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added a new test for TestHomePage">
+      <created>1694448509967</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694448509967</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +252,7 @@
     <MESSAGE value="Add files via upload" />
     <MESSAGE value="Added develop branch" />
     <MESSAGE value="Added a few features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a few features" />
+    <MESSAGE value="Added a new test for TestHomePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new test for TestHomePage" />
   </component>
 </project>
