@@ -42,13 +42,29 @@ public class TestHomePage extends BaseTest {
     @Description("Checking sign in")
     @Link(name = "test case 18", url = "https://jira.com/blablabla/blabla/testcase/18")
     @Severity(SeverityLevel.CRITICAL)
-    @Story("Tabs")
+    @Story("Sign in")
     public void signIn() {
 
         AbstractLocators.BUTTON_SIGN_IN.getElement().click();
         Driver.wait(5000);
 
     }
+
+    @Test
+    @DisplayName("Test case 19 Checking sign up")
+    @Description("Checking sign up")
+    @Link(name = "test case 19", url = "https://jira.com/blablabla/blabla/testcase/19")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Sign up")
+    public void signUp() {
+
+
+        AbstractLocators.BUTTON_CREATE_AN_ACCOUNT.getElement().click();
+        Driver.wait(5000);
+
+    }
+
+
 
 
 }

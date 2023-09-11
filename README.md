@@ -24,4 +24,4 @@ The report will be generated in `target/site/allure-maven-plugin/index.html`
 # Driver settings
 
 All driver setting implements in *Driver.java*. <br>
-Path `src/main/java/com/softwaretestingboard/magento/app/helpers/TestConfig.java`
+Path `src/main/java/com/softwaretestingboard/magento/app/helpers/Driver.java`

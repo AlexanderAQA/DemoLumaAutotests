@@ -19,5 +19,6 @@ public class HomePage extends AbstractPage {
         AbstractLocators.TAB_TRAINING.getElement().should(Condition.exist);
         AbstractLocators.TAB_SALE.getElement().should(Condition.exist);
         AbstractLocators.BUTTON_SIGN_IN.getElement().should(Condition.exist);
+        AbstractLocators.BUTTON_CREATE_AN_ACCOUNT.getElement().should(Condition.exist);
     }
 }
