@@ -36,7 +36,7 @@ public class HomePage extends AbstractPage {
     }
 
 
-
-
-
+    public void checkifUserNotAuthorized() {
+        HomeLocators.NOTIFICATION_USER_NOT_AUTHORIZED.getElement().shouldBe(exist);
+    }
 }

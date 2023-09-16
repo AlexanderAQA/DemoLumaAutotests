@@ -66,7 +66,8 @@ public class TestHomePage extends BaseTest {
         // authorization with "fakeUser" (which is never exist) role from users.csv
         authorizationWithCurrentUser("fakeUser");
         // checking if name "mrTester" exists in the Welcome string
-        Driver.wait(5000);
+        //Driver.wait(5000);
+        app.homePage.checkifUserNotAuthorized();
 
     }
 

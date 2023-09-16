@@ -16,7 +16,8 @@ public enum HomeLocators {
 
     BUTTON_CREATE_AN_ACCOUNT($(Selectors.byTitle("Create an Account"))),
     NOTIFICATION_THANKS_FOR_REGISTRATION($(Selectors.byText("Thank you for registering with Main Website Store."))),
-    STRING_WELCOME($(Selectors.byClassName("logged-in")));
+    STRING_WELCOME($(Selectors.byClassName("logged-in"))),
+    NOTIFICATION_USER_NOT_AUTHORIZED($(Selectors.byText("The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.")));
 
     private final SelenideElement element;
     HomeLocators(SelenideElement element) {this.element = element;}
