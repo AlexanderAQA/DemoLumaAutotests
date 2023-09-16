@@ -3,12 +3,15 @@ package app.autotests.home;
 import app.autotests.BaseTest;
 import com.softwaretestingboard.magento.app.helpers.Driver;
 import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
+import com.softwaretestingboard.magento.app.pages.home.HomePage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static com.softwaretestingboard.magento.app.helpers.Driver.refresh;
 
@@ -67,7 +70,7 @@ public class TestHomePage extends BaseTest {
         authorizationWithCurrentUser("fakeUser");
         // checking if name "mrTester" exists in the Welcome string
         //Driver.wait(5000);
-        app.homePage.checkifUserNotAuthorized();
+        app.homePage.checkIfUserNotAuthorized();
 
     }
 
@@ -101,9 +104,27 @@ public class TestHomePage extends BaseTest {
 
         // Checking if user registered successfully and authorized
         app.homePage.checkIfUserAuthorized(firstname);
-        app.homePage.checkIfUserRegistrated();
+        HomePage.checkIfUserRegistrated();
     }
 
+    @ParameterizedTest(name = "{index} Sign up (negative)")
+    @CsvFileSource(resources = "/parameterized/signUpNegative.csv")
+    @DisplayName("Test case 21 Checking sign up (negative)")
+    @Description("Checking sign up (negative)")
+    @Link(name = "test case 21", url = "https://jira.com/blablabla/blabla/testcase/21")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Sign up")
+    public void signUpNegative(String firstName, String lastName, String email, String password, String confirmPassword) {
+
+        // Click create an account
+        app.homePage.clickButtonAbstractPage("sign up");
+
+        app.homePage.fillRegistrationForm(firstName, lastName, email, password, confirmPassword);
+
+        // Check if registration unsuccessfully
+        HomePage.checkIfUserNotRegistrated();
+
+    }
 
 
 
