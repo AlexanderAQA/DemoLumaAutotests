@@ -54,6 +54,23 @@ public class TestHomePage extends BaseTest {
     }
 
     @Test
+    @DisplayName("Test case 20 checking sign in (negative)")
+    @Description("Checking sign in (negative)")
+    @Link(name = "test case 20", url = "https://jira.com/blablabla/blabla/testcase/20")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Sign in")
+    public void signInNegative() {
+
+        // click sign in button
+        app.homePage.clickButtonAbstractPage("sign in");
+        // authorization with "fakeUser" (which is never exist) role from users.csv
+        authorizationWithCurrentUser("fakeUser");
+        // checking if name "mrTester" exists in the Welcome string
+        Driver.wait(5000);
+
+    }
+
+    @Test
     @DisplayName("Test case 19 Checking sign up (positive)")
     @Description("Checking sign up (positive)")
     @Link(name = "test case 19", url = "https://jira.com/blablabla/blabla/testcase/19")
