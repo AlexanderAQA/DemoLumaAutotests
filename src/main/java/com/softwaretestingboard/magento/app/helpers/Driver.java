@@ -37,7 +37,7 @@ public class Driver {
          switch (TestConfig.browser) {
 
         default:
-            System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver_117/chromedriver.exe");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--no-sandbox", "--ignore-certificate-errors", "--disable-dev-shm-usage", "start-maximized");
             WebDriver driver = new ChromeDriver(options);
