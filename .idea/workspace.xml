@@ -66,7 +66,7 @@
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestHomePage.signUp">
+  <component name="RunManager" selected="JUnit.TestHomePage">
     <configuration name="TestHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoLumaAutotests" />
       <extension name="coverage">
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestHomePage" />
         <item itemvalue="JUnit.TestHomePage.signUp" />
         <item itemvalue="JUnit.TestHomePage.signUp (2)" />
         <item itemvalue="JUnit.TestHomePage.signUp (1)" />
         <item itemvalue="JUnit.TestHomePage.signIn" />
-        <item itemvalue="JUnit.TestHomePage" />
       </list>
     </recent_temporary>
   </component>
