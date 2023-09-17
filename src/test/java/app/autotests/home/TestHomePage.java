@@ -2,6 +2,7 @@ package app.autotests.home;
 
 import app.autotests.BaseTest;
 import com.softwaretestingboard.magento.app.helpers.Driver;
+import com.softwaretestingboard.magento.app.helpers.PropertyFileDecryptor;
 import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
 import com.softwaretestingboard.magento.app.pages.home.HomePage;
 import io.qameta.allure.*;
@@ -10,6 +11,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
+
+import java.nio.file.Paths;
+import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.softwaretestingboard.magento.app.helpers.Driver.refresh;
@@ -108,31 +112,41 @@ public class TestHomePage extends BaseTest {
     @Link(name = "test case 19", url = "https://jira.com/blablabla/blabla/testcase/19")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Sign up")
-    public void signUp() {
-        // Generate a random firstname
-        String firstname = app.homePage.generateRandomName();
-        String lastname = app.homePage.generateRandomName();
-        String email = app.homePage.generateRandomEmail();
+    public void signUp() throws Exception {
 
-        // Click create an account
-        app.homePage.clickButtonAbstractPage("sign up");
+            String password = "qwe123"; // password used for encryption
+            String encryptedConfigFile = "src/main/java/com/softwaretestingboard/magento/app/helpers/encrypted-config.properties";
 
-        // Fill required fields with the generated data
-        HomeLocators.FIELD_FIRSTNAME.getElement().setValue(firstname);
-        HomeLocators.FIELD_LASTNAME.getElement().setValue(lastname);
-        HomeLocators.FIELD_EMAIL_ADRESS.getElement().setValue(email);
+            // Decrypt the properties file
+            Properties properties = PropertyFileDecryptor.decryptPropertiesFile(encryptedConfigFile, password);
 
-        // Fill password fields
-        HomeLocators.FIELD_PASSWORD.getElement().setValue("Qqwe123Snd123");
-        HomeLocators.FIELD_PASSWORD_CONFIRM.getElement().setValue("Qqwe123Snd123");
+            // Access sensitive data from the decrypted properties
+            String password1 = properties.getProperty("password");
 
-        // Click create account
-        HomeLocators.BUTTON_CREATE_AN_ACCOUNT.getElement().click();
-        Driver.wait(2000);
+            // Generate a random firstname
+            String firstname = app.homePage.generateRandomName();
+            String lastname = app.homePage.generateRandomName();
+            String email = app.homePage.generateRandomEmail();
 
-        // Checking if user registered successfully and authorized
-        app.homePage.checkIfUserAuthorized(firstname);
-        HomePage.checkIfUserRegistrated();
+            // Click create an account
+            app.homePage.clickButtonAbstractPage("sign up");
+
+            // Fill required fields with the generated data
+            HomeLocators.FIELD_FIRSTNAME.getElement().setValue(firstname);
+            HomeLocators.FIELD_LASTNAME.getElement().setValue(lastname);
+            HomeLocators.FIELD_EMAIL_ADRESS.getElement().setValue(email);
+
+            // Fill password fields
+            HomeLocators.FIELD_PASSWORD.getElement().setValue(password1);
+            HomeLocators.FIELD_PASSWORD_CONFIRM.getElement().setValue(password1);
+
+            // Click create account
+            HomeLocators.BUTTON_CREATE_AN_ACCOUNT.getElement().click();
+            Driver.wait(2000);
+
+            // Checking if user registered successfully and authorized
+            app.homePage.checkIfUserAuthorized(firstname);
+            HomePage.checkIfUserRegistrated();
     }
 
     @ParameterizedTest()
