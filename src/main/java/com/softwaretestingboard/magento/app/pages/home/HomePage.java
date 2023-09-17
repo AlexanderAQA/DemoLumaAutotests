@@ -1,6 +1,7 @@
 package com.softwaretestingboard.magento.app.pages.home;
 
 import com.codeborne.selenide.Condition;
+import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
 import com.codeborne.selenide.SelenideElement;
 import com.github.javafaker.Faker;
 import com.softwaretestingboard.magento.app.pages.abstractpage.AbstractPage;
@@ -13,15 +14,6 @@ import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 
 public class HomePage extends AbstractPage {
-
-    private static final Map<String, Role> map = new HashMap<>();
-
-    private static final Map<String, SelenideElement> eventFieldKeys = new HashMap<>();
-
-    static {
-        eventFieldKeys.put("email", HomeLocators.getElement().FIELD_EMAIL);
-        eventFieldKeys.put("password", FIELD_PASSWORD);
-    }
 
     @Step("Button click")
     public void clickButtonHomePage(HomeLocators locator) {locator.getElement().click();}
@@ -54,24 +46,16 @@ public class HomePage extends AbstractPage {
 
 
 
+    public static void checkIfRegistrationErrorExists() {
+        HomeLocators.ERROR_MSG_REQ.getElement().shouldBe(exist);
+    }
+
+
+
 
     public void checkIfUserNotAuthorized() {
         HomeLocators.NOTIFICATION_USER_NOT_AUTHORIZED.getElement().shouldBe(exist);
     }
 
-    @Step("Filling fields {fieldName}")
-    public void setFieldHomePage() {
 
-        SelenideElement element = eventFieldKeys.get(fieldName.toLowerCase());
-        setValueClearField(element, text);
-
-    }
-
-    public void fillRegistrationForm(String firstName, String lastName, String email, String password, String confirmPassword) {
-        setFieldAbstractPage(HomeLocators.FIELD_FIRSTNAME, firstName);
-        setFieldAbstractPage(String.valueOf(HomeLocators.FIELD_LASTNAME), lastName);
-        setFieldAbstractPage(String.valueOf(HomeLocators.FIELD_EMAIL_ADRESS), email);
-        setFieldAbstractPage(String.valueOf(HomeLocators.FIELD_PASSWORD), password);
-        setFieldAbstractPage(String.valueOf(HomeLocators.FIELD_PASSWORD_CONFIRM), confirmPassword);
-    }
 }

@@ -1,6 +1,7 @@
 package app.autotests.home;
 
 import app.autotests.BaseTest;
+import com.codeborne.selenide.SelenideElement;
 import com.softwaretestingboard.magento.app.helpers.Driver;
 import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
 import com.softwaretestingboard.magento.app.pages.home.HomePage;
@@ -10,10 +11,17 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.openqa.selenium.By;
 
+import java.util.stream.Stream;
+
+import static com.codeborne.selenide.Condition.exist;
+import static com.codeborne.selenide.Selenide.$;
 import static com.softwaretestingboard.magento.app.helpers.Driver.refresh;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Epic("Component LUMA")
 @Feature("Homepage")
@@ -119,9 +127,19 @@ public class TestHomePage extends BaseTest {
         // Click create an account
         app.homePage.clickButtonAbstractPage("sign up");
 
-        app.homePage.fillRegistrationForm(firstName, lastName, email, password, confirmPassword);
+        // Fill in the sign-up form
+        HomeLocators.FIELD_FIRSTNAME.getElement().setValue(firstName);
+        HomeLocators.FIELD_LASTNAME.getElement().setValue(lastName);
+        HomeLocators.FIELD_EMAIL_ADRESS.getElement().setValue(email);
+        HomeLocators.FIELD_PASSWORD.getElement().setValue(password);
+        HomeLocators.FIELD_PASSWORD_CONFIRM.getElement().setValue(confirmPassword);
 
-        // Check if registration unsuccessfully
+        // Click Create an account
+        app.homePage.clickButtonHomePage(HomeLocators.BUTTON_CREATE_AN_ACCOUNT);
+
+        // Check if registration error message "This is a required field" exists
+        HomePage.checkIfRegistrationErrorExists();
+        // Check if user not registrated
         HomePage.checkIfUserNotRegistrated();
 
     }
