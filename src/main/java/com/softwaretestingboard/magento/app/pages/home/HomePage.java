@@ -1,14 +1,8 @@
 package com.softwaretestingboard.magento.app.pages.home;
 
-import com.codeborne.selenide.Condition;
-import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
-import com.codeborne.selenide.SelenideElement;
 import com.github.javafaker.Faker;
 import com.softwaretestingboard.magento.app.pages.abstractpage.AbstractPage;
 import io.qameta.allure.Step;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
@@ -22,6 +16,13 @@ public class HomePage extends AbstractPage {
     public void checkIfUserAuthorized(String username) {
         HomeLocators.STRING_WELCOME.getElement().shouldHave(text(username));
     }
+
+    @Step("Check if user authorized unsuccessfully")
+    public static void checkIfUserUnsuccessfullyAuthorized() {
+        HomeLocators.STRING_WELCOME.getElement().shouldNotBe(exist);
+    }
+
+
 
 
     public String generateRandomName() {
@@ -46,12 +47,9 @@ public class HomePage extends AbstractPage {
 
 
 
-    public static void checkIfRegistrationErrorExists() {
+    public static void checkIfRequiredFieldErrorExists() {
         HomeLocators.ERROR_MSG_REQ.getElement().shouldBe(exist);
     }
-
-
-
 
     public void checkIfUserNotAuthorized() {
         HomeLocators.NOTIFICATION_USER_NOT_AUTHORIZED.getElement().shouldBe(exist);

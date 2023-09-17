@@ -1,7 +1,6 @@
 package app.autotests.home;
 
 import app.autotests.BaseTest;
-import com.codeborne.selenide.SelenideElement;
 import com.softwaretestingboard.magento.app.helpers.Driver;
 import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
 import com.softwaretestingboard.magento.app.pages.home.HomePage;
@@ -9,16 +8,9 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import com.github.javafaker.Faker;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import org.junit.jupiter.params.provider.CsvSource;
-import org.openqa.selenium.By;
 
-import java.util.stream.Stream;
-
-import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.$;
 import static com.softwaretestingboard.magento.app.helpers.Driver.refresh;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -77,10 +69,38 @@ public class TestHomePage extends BaseTest {
         // authorization with "fakeUser" (which is never exist) role from users.csv
         authorizationWithCurrentUser("fakeUser");
         // checking if name "mrTester" exists in the Welcome string
-        //Driver.wait(5000);
         app.homePage.checkIfUserNotAuthorized();
 
     }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/parameterized/signInNegative.csv")
+    @DisplayName("Test case 22 checking sign in (negative)")
+    @Description("Checking sign in (negative)")
+    @Link(name = "test case 22", url = "https://jira.com/blablabla/blabla/testcase/22")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Sign in")
+    public void signInEmptyNegative(String login, String password) {
+
+        // click sign in button
+        app.homePage.clickButtonAbstractPage("sign in");
+
+        // authorization with empty login/password
+        app.homePage.setFieldAbstractPage("email", login);
+        app.homePage.setFieldAbstractPage("password", password);
+
+        // click enter
+        app.homePage.clickButtonAbstractPage("enter");
+
+        // checking if error message about empty field exists
+        HomePage.checkIfRequiredFieldErrorExists();
+        HomePage.checkIfUserUnsuccessfullyAuthorized();
+
+
+
+    }
+
+
 
     @Test
     @DisplayName("Test case 19 Checking sign up (positive)")
@@ -115,7 +135,7 @@ public class TestHomePage extends BaseTest {
         HomePage.checkIfUserRegistrated();
     }
 
-    @ParameterizedTest(name = "{index} Sign up (negative)")
+    @ParameterizedTest()
     @CsvFileSource(resources = "/parameterized/signUpNegative.csv")
     @DisplayName("Test case 21 Checking sign up (negative)")
     @Description("Checking sign up (negative)")
@@ -138,7 +158,7 @@ public class TestHomePage extends BaseTest {
         app.homePage.clickButtonHomePage(HomeLocators.BUTTON_CREATE_AN_ACCOUNT);
 
         // Check if registration error message "This is a required field" exists
-        HomePage.checkIfRegistrationErrorExists();
+        HomePage.checkIfRequiredFieldErrorExists();
         // Check if user not registrated
         HomePage.checkIfUserNotRegistrated();
 
