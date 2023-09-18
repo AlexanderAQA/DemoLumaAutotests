@@ -12,11 +12,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.util.Base64;
-import java.util.Properties;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.softwaretestingboard.magento.app.helpers.Driver.refresh;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Epic("Component LUMA")
 @Feature("Homepage")
@@ -36,9 +33,10 @@ public class TestHomePage extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Tabs")
     public void checkIfAllTabsExistsHomePage() {
-
+        Driver.wait(2000);
         // checking if all tabs exists from homepage
         app.homePage.checkIfAllTabsExists();
+        Driver.wait(500);
 
     }
 

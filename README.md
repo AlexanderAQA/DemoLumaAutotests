@@ -23,6 +23,11 @@ After launching tests using maven: <br>
 
 The report will be generated in `target/site/allure-maven-plugin/index.html`
 
+Few examples of allure-report:
+![allure](./allure.png)
+
+![allure](./allure2.png)
+
 # Driver settings
 
 All driver setting implements in *Driver.java*. <br>
