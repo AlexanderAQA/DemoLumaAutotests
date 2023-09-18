@@ -2,7 +2,6 @@ package app.autotests.home;
 
 import app.autotests.BaseTest;
 import com.softwaretestingboard.magento.app.helpers.Driver;
-import com.softwaretestingboard.magento.app.helpers.PropertyFileDecryptor;
 import com.softwaretestingboard.magento.app.pages.home.HomeLocators;
 import com.softwaretestingboard.magento.app.pages.home.HomePage;
 import io.qameta.allure.*;
@@ -12,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-import java.nio.file.Paths;
+import java.util.Base64;
 import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -114,16 +113,14 @@ public class TestHomePage extends BaseTest {
     @Story("Sign up")
     public void signUp() throws Exception {
 
-            String password = "qwe123"; // password used for encryption
-            String encryptedConfigFile = "src/main/java/com/softwaretestingboard/magento/app/helpers/encrypted-config.properties";
+            String decodedPassword;
+    /* Here used encoded password, so if you want to change password - you need to encode
+    password using Base64 method https://www.base64encode.org/ and put it to encodedPassword variable              */
+            String encodedPassword = "UXdlMTIzcXdlUGFzc1dvcmQxMiE=";
+            byte[] decodedBytes = Base64.getDecoder().decode(encodedPassword);
+            decodedPassword = new String(decodedBytes);
 
-            // Decrypt the properties file
-            Properties properties = PropertyFileDecryptor.decryptPropertiesFile(encryptedConfigFile, password);
-
-            // Access sensitive data from the decrypted properties
-            String password1 = properties.getProperty("password");
-
-            // Generate a random firstname
+        // Generate a random firstname
             String firstname = app.homePage.generateRandomName();
             String lastname = app.homePage.generateRandomName();
             String email = app.homePage.generateRandomEmail();
@@ -137,8 +134,8 @@ public class TestHomePage extends BaseTest {
             HomeLocators.FIELD_EMAIL_ADRESS.getElement().setValue(email);
 
             // Fill password fields
-            HomeLocators.FIELD_PASSWORD.getElement().setValue(password1);
-            HomeLocators.FIELD_PASSWORD_CONFIRM.getElement().setValue(password1);
+            HomeLocators.FIELD_PASSWORD.getElement().setValue(decodedPassword);
+            HomeLocators.FIELD_PASSWORD_CONFIRM.getElement().setValue(decodedPassword);
 
             // Click create account
             HomeLocators.BUTTON_CREATE_AN_ACCOUNT.getElement().click();
