@@ -39,4 +39,4 @@ Chromedriver for Windows locates at path: `src/test/resources/chromedriver/windo
 
 Chromedriver for Linux locates at path: `src/test/resources/chromedriver/linux_{VERSION}/chromedriver`
 
-Chromedriver for MacOS locates at path: `src/test/resources/chromedriver/macos_{VERSION}/chromedriver`
+Chromedriver for macOS locates at path: `src/test/resources/chromedriver/macos_{VERSION}/chromedriver`
