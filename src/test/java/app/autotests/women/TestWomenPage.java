@@ -26,7 +26,7 @@ public class TestWomenPage extends BaseTest {
     @Story("Women page")
     public void checkIfAllTabsExistsWomenPage() {
 
-        app.womenPage.checkIfAllTabsExistsWomenPage();
+        app.womenPage.checkIfAllTabsExistsWomenPage(); // TODO: add existing tabs!
 
 
 
