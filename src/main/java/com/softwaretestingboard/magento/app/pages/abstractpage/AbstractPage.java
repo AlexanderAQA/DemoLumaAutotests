@@ -64,6 +64,7 @@ public class AbstractPage {
         eventClickKeys.put("enter", SIGNIN);
         eventClickKeys.put("sign in", BUTTON_SIGN_IN);
         eventClickKeys.put("sign up", BUTTON_CREATE_AN_ACCOUNT);
+        eventClickKeys.put("women tab", TAB_WOMEN);
     }
 
     @Step("Filling fields {fieldName}")

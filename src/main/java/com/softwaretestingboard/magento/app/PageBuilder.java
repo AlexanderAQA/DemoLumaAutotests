@@ -3,12 +3,12 @@ package com.softwaretestingboard.magento.app;
 
 
 import com.softwaretestingboard.magento.app.pages.home.HomePage;
-import com.softwaretestingboard.magento.app.pages.whatsnew.WhatsnewPage;
+import com.softwaretestingboard.magento.app.pages.women.WomenPage;
 
 public class PageBuilder {
 
     public static HomePage buildHomePage() {    return new HomePage();  }
-    public static WhatsnewPage buildWhatsnewPage() { return new WhatsnewPage(); }
+    public static WomenPage buildWhatsnewPage() { return new WomenPage(); }
 
 
 
