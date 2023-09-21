@@ -16,6 +16,13 @@ public class WomenPage extends AbstractPage {
         WomenLocators.CATEGORY_TOPS.getElement().shouldBe(exist);
         WomenLocators.CATEGORY_BOTTOMS.getElement().shouldBe(exist);
         WomenLocators.TITLE_TOPS.getElement().shouldBe(exist);
+        WomenLocators.CATEGORY_HOODIES_SWEATSHIRTS.getElement().shouldBe(exist);
+        WomenLocators.CATEGORY_JACKETS.getElement().shouldBe(exist);
+        WomenLocators.CATEGORY_TEES.getElement().shouldBe(exist);
+        WomenLocators.CATEGORY_BRAS_AND_TANKS.getElement().shouldBe(exist);
+        WomenLocators.TITLE_BOTTOMS.getElement().shouldBe(exist);
+        WomenLocators.CATEGORY_PANTS.getElement().shouldBe(exist);
+        WomenLocators.CATEGORY_SHORTS.getElement().shouldBe(exist);
 
     }
 
